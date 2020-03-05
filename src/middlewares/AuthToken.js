@@ -14,7 +14,6 @@ const secret='sincrohonda';
 module.exports = function(req,res,next){
    
    var ruta=req.path
-   console.log('puta ruta:'+ruta)
    var metodo=req.method;
   
    if(ruta ==a1 || ruta ==a2|| ruta ==a3 || ruta ==a4 || ruta ==a5 || ruta ==a6 || ruta ==a7 || ruta ==a8 || ruta ==a9){

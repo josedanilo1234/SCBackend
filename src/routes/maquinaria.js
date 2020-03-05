@@ -21,7 +21,8 @@ router.get('/', async function(req,res){
 
 
    router.get('/:codigo', async function(req,res){
-    conexion.query('select * from maquinaria where CODIGO= ?',[req.params.codigo],
+    var parametro=req.params.codigo;
+    conexion.query("select * from maquinaria where CODIGO LIKE '%"+parametro+"%' OR TIPO LIKE '%"+parametro+"%' OR NOMBRE LIKE '%"+parametro+"%'",
     (err,result)=>{
         if (err) {
             res.status(500).json({

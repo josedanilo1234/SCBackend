@@ -13,9 +13,10 @@ module.exports = ()=>{
         database:'sincro_honda'
 */
     return mysql.createConnection({
-        host:'198.71.225.53',
-        user: 'jose',
+        host:'localhost',
+        user: 'root',
         password:'Jo.dussan',
-        database:'SH'
+        database:'sincro_honda'
     })
+    
 }
